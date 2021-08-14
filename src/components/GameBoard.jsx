@@ -1,9 +1,15 @@
 import React from 'react';
 
+import '../styles/game-board.css'
+
 function GameBoard(props){
     return(
-        <div className="game-board">
-            <h1>React Robotron</h1>
+        <div className="game-space">
+            <label>React Robotron</label>
+            <div className='game-board'>
+
+            </div>
+            
         </div>
     )
 }

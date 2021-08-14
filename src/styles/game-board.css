@@ -1,0 +1,14 @@
+.game-space{
+    background-color: grey;
+    width: 60rem;
+    margin: auto;
+    font-size: 40px;
+    font-style: bold;
+}
+.game-board{
+    display: flex;
+    margin: auto;
+    width: 40rem;
+    height: 40rem;
+    background-color: red;
+}

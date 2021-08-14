@@ -7,6 +7,7 @@ import store from './store.js'
 import React from 'react';
 import './App.css';
 import GameBoard from './components/GameBoard.jsx'
+import LeaderBoard from './components/LeaderBoard.jsx'
 
 const NoMatch = ({location}) => (
   <div>
@@ -24,6 +25,10 @@ function App() {
           <Route exact path='/'>
           <NavBar/>
           <GameBoard/>
+          </Route>
+          <Route path='/leaderboard'>
+          <NavBar/>
+          <LeaderBoard/>
           </Route>
           <Route component={NoMatch}></Route>
         </Switch>
