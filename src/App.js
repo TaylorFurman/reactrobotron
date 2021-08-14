@@ -6,8 +6,10 @@ import store from './store.js'
 
 import React from 'react';
 import './App.css';
+
 import GameBoard from './components/GameBoard.jsx'
 import LeaderBoard from './components/LeaderBoard.jsx'
+import Graphs from './components/Graphs.jsx'
 
 const NoMatch = ({location}) => (
   <div>
@@ -24,7 +26,10 @@ function App() {
         <Switch>
           <Route exact path='/'>
           <NavBar/>
+          <div>
           <GameBoard/>
+          <Graphs/>
+          </div>
           </Route>
           <Route path='/leaderboard'>
           <NavBar/>
