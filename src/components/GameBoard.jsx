@@ -22,7 +22,7 @@ class GameBoard extends Component{
             screen:{
                 width: window.innerWidth,
                 height: window.innerHeight,
-                ratio: window.devicePixelRatio || 1,
+                ratio: window.devicePixelRatio || 1, 
             },
             context: null,
             keys :{
@@ -45,20 +45,23 @@ class GameBoard extends Component{
         if(e.keyCode === KEY.UP || e.keyCode === KEY.W) keys.up = value;
         if(e.keyCode === KEY.DOWN || e.keyCode === KEY.S) keys.down = value;
         if(e.keyCode === KEY.SPACE) keys.space = value;
+        console.log(e);
         this.setState({
             keys: keys
         });
     }
+    render(){
+        return (
+            <div className="game-space">
+                <label>React Robotron</label>
+                <canvas ref='game-board'>
+                    
+                </canvas>  
+            </div>
+        )
+    }   
+} 
+    
 
-    return(
-        <div className="game-space">
-            <label>React Robotron</label>
-            <canvas className='game-board'>
-
-            </canvas>
-            
-        </div>
-    )
-}
 
 export default GameBoard;

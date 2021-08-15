@@ -1,4 +1,4 @@
-import deepcopy from 'deepcopy';
+//import deepcopy from 'deepcopy';
 
 let initialScore ={
     scoreKeeper:[
@@ -9,6 +9,7 @@ let initialScore ={
 
 function scoreKeeper(initialScore, action){
     console.log(action);
+    
 
     //let new_state = deepcopy(state);
 }
