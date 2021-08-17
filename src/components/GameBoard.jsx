@@ -45,16 +45,22 @@ class GameBoard extends Component{
         if(e.keyCode === KEY.UP || e.keyCode === KEY.W) keys.up = value;
         if(e.keyCode === KEY.DOWN || e.keyCode === KEY.S) keys.down = value;
         if(e.keyCode === KEY.SPACE) keys.space = value;
-        console.log(e);
+        console.log(value);
         this.setState({
             keys: keys
         });
     }
+
+   
+
+
+
+
     render(){
         return (
             <div className="game-space">
                 <label>React Robotron</label>
-                <canvas ref='game-board'>
+                <canvas className='game-board'>
                     
                 </canvas>  
             </div>
