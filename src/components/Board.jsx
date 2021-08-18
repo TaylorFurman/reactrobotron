@@ -29,8 +29,8 @@ export default function Robotron(){
     return <canvas 
     id="canvas" 
     ref={canvasRef}
-    onKeyDown={handleKeyDown}
-    onKeyUp={handleKeyUp}
+//onKeyDown={handleKeyDown}
+   //onKeyUp={handleKeyUp}
     height="500px" 
     width="800px"/>;
 }
