@@ -7,10 +7,11 @@ import store from './store.js'
 import React from 'react';
 import './App.css';
 
-import GameBoard from './components/GameBoard.jsx'
-import GameLoop from './components/GameMovement.jsx'
+//import GameBoard from './components/GameBoard.jsx'
+//import GameLoop from './components/GameMovement.jsx'
 import LeaderBoard from './components/LeaderBoard.jsx'
 import Graphs from './components/Graphs.jsx'
+import Robotron from './components/Board.jsx'
 
 const NoMatch = ({location}) => (
   <div>
@@ -28,7 +29,7 @@ function App() {
           <Route exact path='/'>
           <NavBar/>
           <div>
-          <GameBoard/>
+          <Robotron/>
           <Graphs/>
           </div>
           </Route>
