@@ -2,8 +2,8 @@ export default {
     bulletObj:{
         x: 20,
         y: 20,
-        dx: 5,
-        dy: 5,
+        dx: 0,
+        dy: 0,
         rad: 10,
         speed: 10,
     },
@@ -17,6 +17,12 @@ export default {
     },
     playerObj:{
         name: "Player1",
+        x: 20,
+        y: 20,
+        dx: 0,
+        dy: 0,
+        rad: 10,
+        speed: 10,
         lives: 3,
         score: 0,
     }
