@@ -17,7 +17,7 @@ export default {
     },
     playerObj:{
         name: "Player1",
-        x: 20,
+        x: 400,
         y: 20,
         dx: 0,
         dy: 0,

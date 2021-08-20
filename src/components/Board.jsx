@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { BulletMovement } from './BulletMovement';
 import data from './Data.jsx'
 import WallCollision from './WallCollision.jsx';
-import Player from './Player';
+import {PlayerMovement} from './Player';
 
 import '../styles/game.css'
 
@@ -17,7 +17,7 @@ export default function Robotron(){
             let {playerObj} = data;
             ctx.clearRect(0,0,canvas.width, canvas.height);
             BulletMovement(ctx,bulletObj);
-            Player(ctx, playerObj)
+            PlayerMovement(ctx, playerObj)
 
             //handle wall collisions
             WallCollision(bulletObj, canvas);
